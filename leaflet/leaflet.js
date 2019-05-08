@@ -21,13 +21,13 @@ var layer2 = L.tileLayer.iiif(iiifUrl, {
 
 
 // use this method to layer two separate image requestsinfo.json
-// var layer1 = L.tileLayer.iiif('https://d7hftxdivxxvm.cloudfront.net/?resize_to=fit&width=400&height=666&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FGxSlf0622_m1I7Ht8nTTCQ%2Flarge.jpg', {
+// var layer1 = L.tileLayer.iiif('https://d7hftxdivxxvm.cloudfront.net/?resize_to=fit&width=400&height=666&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FGxSlf0622_m1I7Ht8nTTCQ%2Flarge.jpg/info.json', {
 //     fitBounds: false,
 //   }
 // ).addTo(map);
 
 // var layer2 = L.tileLayer.iiif(
-//   'https://static01.nyt.com/images/2014/01/21/arts/21GUGGENHEIM/21GUGGENHEIM-articleLarge.jpg?quality=75&auto=webp&disable=upscale'
+//   'https://static01.nyt.com/images/2014/01/21/arts/21GUGGENHEIM/21GUGGENHEIM-articleLarge.jpg?quality=75&auto=webp&disable=upscale/info.json'
 // ).addTo(map);
 
 L.control.sideBySide(layer1, layer2).addTo(map);
